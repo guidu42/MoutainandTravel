@@ -166,12 +166,13 @@ h2:after{
   -moz-transition: all 0.3s ease;
   -ms-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
+  width: 25%;
   transition: all 0.3s ease;
 }
 .photo_sejour{
   border: 0px solid black;
   border-radius: 10px / 10px;
-  width: 300px;
+  width: 100%;
   height: 300px;
   object-fit: cover;
   display: block;
@@ -180,7 +181,6 @@ h2:after{
 }
 .text_sejour{
   background-color: #FAFAFA;
-  width: 250px;
   max-height: 200px;
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
   padding: 5px 20px;
@@ -199,7 +199,8 @@ h2:after{
   font-weight: bold;
 }
 .text_sejour h3{
-  margin:0;
+  margin: 0;
+  text-align: left;
 }
 .text_sejour h3+p{
   color: #e39020;
@@ -209,6 +210,9 @@ h2:after{
   max-height: 75px;
   overflow: hidden;
   text-align: left;
+}
+p.calltoaction{
+  margin-bottom: 0;
 }
 .sejour:hover{
   transform: scale(1.05);
@@ -237,8 +241,7 @@ h2:after{
 
 .carte{
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  align-items: center;
 }
 
 .carte_content{
@@ -495,6 +498,7 @@ input{
 #Avis_titre{
   color: #FAFAFA;
   margin-left: 20%;
+  margin-top: 0;
 }
 #Avis_titre:after{
   background-color: #FAFAFA !important;
@@ -519,6 +523,7 @@ input{
   top: 50%;
   left:20%;
   transform: translate(-50%,-50%);
+  z-index: -1;
 }
 .avis_client span{
   position: absolute;
